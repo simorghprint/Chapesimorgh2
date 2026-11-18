@@ -1,208 +1,83 @@
 
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="چاپخانه سیمرغ ملایر، چاپ بنر، ماگ، مهر، استیکر و کارت عروسی">
-<title>چاپخانه سیمرغ | بزرگترین مرکز چاپ در غرب کشور</title>
+<section id="online-order" style="
+background:linear-gradient(135deg,#14264d,#2765a5);
+padding:50px 20px;
+text-align:center;
+color:white;
+">
+  <h2 style="color:#ffc43d;font-size:27px">
+    ثبت سفارش آنلاین
+  </h2>
 
-<style>
-* {box-sizing:border-box}
-html {scroll-behavior:smooth}
-body {
-  margin:0;
-  font-family:Tahoma,Arial,sans-serif;
-  background:#f5f7fb;
-  color:#20243a;
-}
-header {
-  background:#14264d;
-  color:white;
-  padding:18px 6%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  flex-wrap:wrap;
-  gap:15px;
-}
-header h2 {margin:0;color:#ffc43d}
-nav {display:flex;flex-wrap:wrap;gap:15px}
-nav a {color:white;text-decoration:none;font-size:14px}
-.hero {
-  padding:80px 20px;
-  text-align:center;
-  background:linear-gradient(135deg,#14264d,#2765a5);
-  color:white;
-}
-.hero h1 {font-size:36px}
-.hero p {font-size:18px;line-height:2}
-.btn {
-  display:inline-block;
-  padding:13px 24px;
-  background:#ffc43d;
-  color:#14264d;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:bold;
-  margin:8px;
-}
-section {padding:55px 6%;text-align:center}
-.title {color:#14264d;margin-bottom:30px;font-size:26px}
-.services {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-  gap:22px;
-}
-.service {
-  background:white;
-  border-radius:15px;
-  overflow:hidden;
-  box-shadow:0 5px 20px #00000012;
-  text-align:center;
-}
-.service img {
-  width:100%;
-  height:220px;
-  object-fit:cover;
-  display:block;
-}
-.service h3 {color:#1d477e}
-.service p {
-  color:#666;
-  line-height:2;
-  padding:0 15px;
-  font-size:14px;
-}
-.service a {
-  display:inline-block;
-  margin:10px 0 20px;
-  background:#14264d;
-  color:white;
-  text-decoration:none;
-  padding:10px 20px;
-  border-radius:7px;
-}
-.about {background:white;line-height:2.5}
-.contact {background:#14264d;color:white;line-height:2.7}
-.contact a {color:#ffc43d;text-decoration:none}
-footer {
-  background:#0d1935;
-  color:white;
-  text-align:center;
-  padding:22px;
-}
-@media(max-width:600px) {
-  .hero h1 {font-size:27px}
-  header {justify-content:center}
-  nav {justify-content:center}
-}
-</style>
-</head>
+  <p style="line-height:2">
+    برای ثبت سفارش، نوع خدمات موردنظر خود را انتخاب کنید
+    و از طریق واتساپ با ما در ارتباط باشید.
+  </p>
 
-<body>
+  <div style="max-width:420px;margin:25px auto">
 
-<header>
-  <h2>چاپخانه سیمرغ</h2>
-  <nav>
-    <a href="#home">خانه</a>
-    <a href="#services">خدمات</a>
-    <a href="#about">درباره ما</a>
-    <a href="#contact">تماس</a>
-  </nav>
-</header>
+    <select id="orderType" style="
+    width:100%;
+    padding:16px;
+    border-radius:10px;
+    border:0;
+    font-size:16px;
+    font-family:Tahoma;
+    margin-bottom:18px;
+    direction:rtl;
+    ">
+      <option value="">انتخاب نوع سفارش</option>
+      <option>چاپ بنر</option>
+      <option>بنر تسلیت و آگهی ترحیم</option>
+      <option>چاپ ماگ</option>
+      <option>کارت عروسی</option>
+      <option>چاپ استیکر و وینیل</option>
+      <option>ساخت مهر اتوماتیک و لیزری</option>
+      <option>چاپ تیشرت</option>
+      <option>سایر خدمات چاپ</option>
+    </select>
 
-<div class="hero" id="home">
-  <h1>چاپخانه سیمرغ</h1>
-  <p>بزرگترین مرکز چاپ در غرب کشور</p>
-  <p>بیش از ۲۰ سال تجربه در صنعت چاپ و تبلیغات</p>
-  <a class="btn" href="#services">مشاهده خدمات</a>
-  <a class="btn" href="https://wa.me/989189023896">سفارش در واتساپ</a>
-</div>
+    <button onclick="sendOrder()" style="
+    width:100%;
+    padding:17px;
+    border:0;
+    border-radius:10px;
+    background:#ffc43d;
+    color:#14264d;
+    font-size:18px;
+    font-weight:bold;
+    font-family:Tahoma;
+    cursor:pointer;
+    ">
+      ثبت سفارش از طریق واتساپ
+    </button>
 
-<section id="services">
-<h2 class="title">خدمات چاپخانه سیمرغ</h2>
-
-<div class="services">
-
-  <div class="service">
-    <img src="./images/banner.jpg_072611.jpg" alt="چاپ بنر">
-    <h3>چاپ بنر</h3>
-    <p>چاپ انواع بنر تبلیغاتی، فروشگاهی و مناسبتی</p>
-    <a href="https://wa.me/989189023896">سفارش بنر</a>
   </div>
 
-  <div class="service">
-    <img src="./images/banner.jpg_072611.jpg" alt="بنر تسلیت">
-    <h3>بنر تسلیت و آگهی ترحیم</h3>
-    <p>طراحی و چاپ انواع بنر تسلیت و آگهی ترحیم</p>
-    <a href="https://wa.me/989189023896">سفارش بنر</a>
-  </div>
-
-  <div class="service">
-    <img src="./images/mug.jpg_072601.jpg" alt="چاپ ماگ">
-    <h3>چاپ ماگ</h3>
-    <p>چاپ ماگ با عکس، متن و طرح دلخواه شما</p>
-    <a href="https://wa.me/989189023896">سفارش ماگ</a>
-  </div>
-
-  <div class="service">
-    <img src="./images/wedding.jpg_072610.jpg" alt="کارت عروسی">
-    <h3>کارت عروسی</h3>
-    <p>طراحی و چاپ انواع کارت عروسی و دعوتنامه</p>
-    <a href="https://wa.me/989189023896">سفارش کارت</a>
-  </div>
-
-  <div class="service">
-    <img src="./images/sticker.jpg_072609.jpg" alt="چاپ استیکر">
-    <h3>چاپ استیکر و وینیل</h3>
-    <p>چاپ انواع استیکر تبلیغاتی و تزئینی</p>
-    <a href="https://wa.me/989189023896">سفارش استیکر</a>
-  </div>
-
-  <div class="service">
-    <img src="./images/stamp.jpg_072603.jpg" alt="ساخت مهر">
-    <h3>ساخت مهر اتوماتیک و لیزری</h3>
-    <p>طراحی و ساخت انواع مهر اتوماتیک و لیزری</p>
-    <a href="https://wa.me/989189023896">سفارش مهر</a>
-  </div>
-
-  <div class="service">
-    <img src="./images/tishirt.jpg_072609.jpg" alt="چاپ تیشرت">
-    <h3>چاپ تیشرت</h3>
-    <p>چاپ طرح و عکس دلخواه روی تیشرت</p>
-    <a href="https://wa.me/989189023896">سفارش تیشرت</a>
-  </div>
-
-</div>
-</section>
-
-<section class="about" id="about">
-  <h2 class="title">درباره چاپخانه سیمرغ</h2>
-  <p>
-    چاپخانه سیمرغ با بیش از ۲۰ سال سابقه فعالیت
-    در صنعت چاپ، ارائه‌دهنده خدمات متنوع چاپ و تبلیغات
-    با کیفیت بالا و قیمت مناسب است.
-    هدف ما جلب رضایت مشتریان و ارائه بهترین خدمات است.
+  <p style="font-size:13px">
+    چاپخانه سیمرغ | آماده دریافت سفارش‌های شما
   </p>
 </section>
 
-<section id="contact" class="contact">
-  <h2>ارتباط با چاپخانه سیمرغ</h2>
-  <p>📍 آدرس: ملایر، میدان امام خمینی، چاپخانه سیمرغ</p>
-  <p>📞 تماس اول: <a href="tel:09189023896">09189023896</a></p>
-  <p>📞 تماس دوم: <a href="tel:09183090630">09183090630</a></p>
-  <p>📷 اینستاگرام:
-    <a href="https://instagram.com/chapesimorgh2021" target="_blank">@chapesimorgh2021</a>
-  </p>
-  <a class="btn" href="tel:09189023896">تماس با ما</a>
-  <a class="btn" href="https://wa.me/989189023896">واتساپ و سفارش</a>
-  <a class="btn" href="https://instagram.com/chapesimorgh2021">اینستاگرام</a>
-</section>
+<script>
+function sendOrder() {
+  const service = document.getElementById("orderType").value;
 
-<footer>
-  چاپخانه سیمرغ | بزرگترین مرکز چاپ در غرب کشور
-</footer>
+  if (!service) {
+    alert("لطفاً نوع سفارش خود را انتخاب کنید");
+    return;
+  }
 
-</body>
-</html>
+  const message =
+    "سلام، وقت بخیر\n" +
+    "می‌خواهم از چاپخانه سیمرغ سفارش ثبت کنم.\n" +
+    "نوع سفارش من: " + service +
+    "\nلطفاً راهنمایی بفرمایید.";
+
+  const url =
+    "https://wa.me/989189023896?text=" +
+    encodeURIComponent(message);
+
+  window.open(url, "_blank");
+}
+</script>
